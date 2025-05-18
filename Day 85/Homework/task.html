@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            color: #102a42;
+        }
+        .helo{
+            display: block;
+            font-size: 50px;
+        }
+        .helo button{
+            border: #102a42 solid;
+            border-radius: 10px;
+            width: 100px;
+            height: 50px;
+        }
+        button {
+            color: #102a42
+        }
+    </style>
+</head>
+<body>
+    <center>
+    <div class="helo">
+    <h1>Counter</h1>
+    <h1 id="h1">0</h1>
+    <button  onclick="down()">Decrease</button>
+    <button onclick="reset()">Reset</button>
+    <button  onclick="up()">Increase</button>
+    </div>
+    </center>
+</body> 
+</html>
+<script>
+    let start = 0
+    function up(){
+        start += 1
+        document.getElementById("h1").textContent = start
+    }
+
+    function down(){
+        start -= 1
+        document.getElementById("h1").textContent = start   
+    }
+
+    function reset(){
+        // let re = 0 //
+        //document.getElementById('h1').textContent = re //
+        start = 0
+        document.getElementById('h1').textContent = start
+    }
+</script>

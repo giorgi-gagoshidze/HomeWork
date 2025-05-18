@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tickets!!!!</title>
+</head>
+<body>
+    <h1>Ticket price:</h1>
+    <p id="token">0</p>
+    <script>
+        //თუ ასაკი ნაკლებია 6 წელზე → ბილეთი უფასოა.
+    //თუ ასაკი 6-დან 17 წლამდეა → ბილეთის ფასი არის 5 ლარი.
+    //თუ ასაკი 18-დან 64 წლამდეა → ბილეთის ფასი არის 10 ლარი.
+    //თუ ასაკი 65-ზე მეტია → ბილეთის ფასი არის 7 ლარი.
+    //თუ შეყვანილია არასწორი ასაკი (ნაკლებია ნულზე ან არაა რიცხვი) → დაბეჭდე: "გთხოვთ, შეიყვანეთ სწორი ასაკი. 
+    let mes = ""
+    age = prompt('enter your age:')
+    if (age < 6) {
+        mes = "ticket is free!"
+    }
+    else if (age >= 6 && age <= 17){
+        mes = 'ticket is 5 lari.'
+    }
+    else if (age >= 18 && age <= 64){
+        mes = 'ticket is 10 lari.'
+    }
+    else if (age >= 65){
+        mes = 'ticket is 7 lari.'
+    }
+    else if (age = "!","@","#","$","%","^","&","*","(",")","-","_","=","+","[","]","}","{","'",";",":",",","<",".","<","|"," "){
+        mes = 'please enter valid number!'
+    }
+    document.getElementById('token').textContent = mes;
+    </script>
+</body>
+</html>

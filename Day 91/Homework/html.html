@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            justify-content: center;
+            align-items: center;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <center>
+            <label for="weight">Weight (kg):</label>
+            <input type="number" id="weight" placeholder="Enter weight in kg" required>
+            <br><br>
+            <label for="height">Height (cm):</label>
+            <input type="number" id="height" placeholder="Enter height in cm" required><br><br>
+            <input id="btn" type="button" onclick="calculateBMI()" value="Calculate BMI">
+    </center>
+    <script src="js.js"></script>
+</body>
+</html>

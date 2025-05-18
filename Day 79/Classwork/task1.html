@@ -1,0 +1,20 @@
+<!--შექმენით საიტი სადაც გამოყენებთ prompt()-ს, alert()-ს, confirm()-ს, შედარების ოპერატორებს, ასევე confirm()-ში მომხმარებლის არევანი შეინახეთ ცვლადში და გამოიტანეთ კონსოლში.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document</title>
+    <script>
+        function inpoutuser() {
+            let userName = prompt("please input you name:");
+            alert("yello " + userName + "!!");
+            let sure = confirm("want to continiue?");
+            console.log("your answer " + sure);
+        }
+    </script>
+</head>
+<body>
+    <button onclick="inpoutuser()">start</button>
+</body>
+</html>

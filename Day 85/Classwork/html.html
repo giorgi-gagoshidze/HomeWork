@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="h1"></h1>
+    <button id="bt1" onclick="up()">+5</button>
+    <button id="bt2" onclick="down()">-5</button>
+</body> 
+</html>
+<script>
+    let start = 0
+    function up(){
+        start += 5 
+        document.getElementById("h1").textContent = count
+    }
+
+    function down(){
+        start -= 5
+        document.getElementById("h1").textContent = count
+    }
+</script>
