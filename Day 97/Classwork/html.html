@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Last bell</title>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    #title {
+      color: black;
+      font-size: 40px;
+    }
+    #photo {
+      box-shadow: 5px 5px 5px grey;
+      width: 300px;
+      height: 300px;
+      border-radius: 10px;
+    }
+    button {
+      margin: 5px;
+    }
+  </style>
+</head>
+<body>
+    <h1 id="title">Last bell</h1>
+  <img id="photo" src="lastbell.png" alt="" />
+  <div style="margin-top: 20px;">
+    <button onclick="width()">width</button>
+    <button onclick="height()">height</button>
+    <button onclick="radius()">radius</button>
+    <button onclick="shadow()">shadow</button>
+    <button onclick="color()">title color</button>
+    <button onclick="titlesize()">title size</button>
+  </div>
+  <script>
+    function width() {
+      const photo = document.getElementById("photo");
+      photo.style.width = "500px";
+    }
+    function height() {
+      const photo = document.getElementById("photo");
+      photo.style.height = "500px";
+    }
+    function radius() {
+      const photo = document.getElementById("photo");
+      photo.style.borderRadius = "50%";
+    }
+    function shadow() {
+      const photo = document.getElementById("photo");
+      photo.style.boxShadow = "10px 10px 5px grey";
+    }
+    function color() {
+      const title = document.getElementById("title");
+      title.style.color = "red";
+    }
+    function titlesize() {
+      const title = document.getElementById("title");
+      title.style.fontSize = "50px";
+    }
+  </script>
+
+</body>
+</html>
