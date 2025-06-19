@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Browser</title>
+  <style>
+    #container {
+      margin-top: 20px;
+      padding: 10px;
+    }  
+    .added-button {
+          margin-top: 5px;
+    }
+
+    </style>
+</head>
+
+<body>
+    <button onclick="addContent()">add thi pilaki</button>
+  <div id="DIV">
+  </div>
+  <scriptb>
+     function addContent() {
+      let container = document.getElementById("DIV")
+      let paragraph = document.createElement("p")
+      paragraph.textContent = "THSI IS FRIKING ADDED PARARGRAPH"
+      container.appendChild(paragraph)
+      let newButton = document.createElement("button")
+      newButton.textContent = "This is new Pilaki"
+      container.appendChild(newButton)
+   }
+  </script>
+</body>
+
+</html>

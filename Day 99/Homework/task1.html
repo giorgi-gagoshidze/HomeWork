@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>document</title>
+</head>
+<body>
+    <div id="bc1"></div>
+    <div id="bx2"></div>
+    <p id="bx3"></p>
+    <script>
+        const a = document.createElement('p')
+        const b = document.createTextNode('aded paragrap')
+        a.appendChild(b)
+        document.body.appendChild(a)
+        const c = document.createElement('h2')
+        c.textContent = 'Welcome'
+        const d = document.getElementById('bc1')
+        d.appendChild(c)
+        const e = document.createElement('div')
+        e.style.backgroundColor = 'blue'
+        e.style.color = 'white'
+        e.textContent = 'This is a blue div'
+        document.body.appendChild(e)
+        const f = document.createElement('button')
+        f.textContent = 'Click Me'
+        const g = document.getElementById('bx2')
+        g.appendChild(f)
+        const h = document.createElement('span')
+        h.textContent = 'Important!'
+        h.style.color = 'red'
+        const i = document.getElementById('bx3')
+        i.appendChild(h)
+    </script>
+</body>
+</html>

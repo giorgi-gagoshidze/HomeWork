@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="x1"></div>
+    <div id="x2">
+        <p id="x3">i think they wil remove me</p>
+    </div>
+    <br>
+    <button id="x4">Try to hover me</button>
+    <div id="x5">
+        <button id="x6">i dont like myself please click me to replace</button>
+    </div>
+    <script>
+        const a1 = document.createElement('div')
+        const a2 = document.createElement('span')
+        a2.textContent = 'why am i inside div'
+        a1.appendChild(a2)
+        document.getElementById('x1').appendChild(a1)
+        const b1 = document.getElementById('x2')
+        const b2 = document.getElementById('x3')
+        b1.removeChild(b2)
+        const c1 = document.getElementById('x4')
+        c1.onmouseover = function(){
+             console.log(5)
+            }
+        c1.onmouseout = function(){ 
+            console.log(10)
+        }
+        const d1 = document.getElementById('x5')
+        const d2 = document.getElementById('x6')
+        const d3 = document.createElement('p')
+        d3.textContent = 'hehehe i replaced button'
+        d1.replaceChild(d3, d2);
+    </script>
+</body>
+</html>

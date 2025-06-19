@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <p id="p123">I AM ORIHINAL TEXT</p>
+    <button id="b456">how about you click Me</button>
+    <div id="d789" style="width:200px; height:100px; border:1px solid black;">Hover area</div>
+    <img id="i321" src="img.png" alt="Image">
+    <h1 id="h654">This is a heading</h1>
+    <script>
+        const a1 = document.getElementById('b456')
+        const a2 = document.getElementById('p123')
+        a1.addEventListener('click', function(){
+            a2.textContent = 'orihginal changes with fake one 😔'
+        })
+        const b1 = document.getElementById('d789')
+        b1.addEventListener('pointerover', function(){
+            b1.style.backgroundColor = 'green'
+        })
+        b1.addEventListener('pointerout', function(){
+            b1.style.backgroundColor = 'white'
+        })
+        const c1 = document.getElementById('i321')
+        c1.addEventListener('click', function(){
+            c1.style.width = '300px'
+        })
+        const d1 = document.getElementById('h654')
+        d1.addEventListener('pointerover', function() {
+            console.log('Mouse is here!')
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>documnet</title>
+</head>
+<body>
+  <p id="p">bye</p>
+  <div id="id">
+    <button id="replaceBtn" onclick="rp()">replace Me</button>
+  </div>
+  <script>
+    function rp() {
+      let container = document.getElementById('id');
+      let paragraph = document.getElementById('p');
+      container.innerHTML = '';
+      container.appendChild(paragraph);
+    }
+  </script>
+</body>
+</html>
