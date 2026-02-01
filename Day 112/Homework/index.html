@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Order Summary</title>
+<style>
+  body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #e9efff;
+  }
+
+  .page {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+
+  .card {
+    width: 340px;
+    background: #ffffff;
+    border-radius: 14px;
+    text-align: center;
+    border: 1px solid #dde3ff;
+  }
+
+  .top {
+    background: #2f35d6;
+    height: 150px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .avatar {
+    width: 90px;
+    height: 90px;
+    background: #7cc9c3;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+  }
+
+  .content {
+    padding: 22px;
+  }
+
+  .title {
+    font-size: 22px;
+    margin: 0 0 8px 0;
+    color: #25304a;
+    font-weight: bold;
+  }
+
+  .sub {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #6b7280;
+    margin: 0 0 18px 0;
+  }
+
+  .plan {
+    background: #f3f5ff;
+    border-radius: 12px;
+    padding: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 18px;
+  }
+
+  .plan-left {
+    display: flex;
+    align-items: center;
+  }
+
+  .icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 10px;
+    background: #e3e7ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    color: #2f35d6;
+    margin-right: 12px;
+  }
+
+  .plan-name {
+    font-size: 15px;
+    color: #1f2937;
+    font-weight: bold;
+    margin: 0;
+  }
+
+  .price {
+    font-size: 13px;
+    color: #6b7280;
+    margin: 2px 0 0 0;
+  }
+
+  .change {
+    font-size: 13px;
+    color: #2f35d6;
+    text-decoration: underline;
+  }
+
+  .btn {
+    width: 100%;
+    padding: 14px 16px;
+    border: none;
+    border-radius: 10px;
+    background: #3a33ff;
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .cancel {
+    display: inline-block;
+    margin-top: 14px;
+    font-size: 14px;
+    color: #6b7280;
+    text-decoration: none;
+  }
+</style>
+</head>
+<body>
+  <div class="page">
+    <div class="card">
+      <div class="top">
+        <div class="avatar">🎧</div>
+      </div>
+
+      <div class="content">
+        <h2 class="title">Order Summary</h2>
+        <p class="sub">
+          You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!
+        </p>
+        <div class="plan">
+          <div class="plan-left">
+            <div class="icon">♪</div>
+            <div>
+              <p class="plan-name">Annual Plan</p>
+              <p class="price">$59.99/year</p>
+            </div>
+          </div>
+          <a href="#" class="change">Change</a>
+        </div>
+
+        <button class="btn">Proceed to Payment</button>
+        <a href="#" class="cancel">Cancel Order</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

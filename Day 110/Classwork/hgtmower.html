@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        window.onload = function(){
+            console.log(5)
+        }
+</script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container"></div>
+    <script>
+        const names = ["sandrour", "ninour", "giorgiur", "mariur"]
+        const container = document.getElementById("container")
+        for (let i = 0; i < names.length; i++) {
+            const div = document.createElement("div");
+            div.textContent = names[i];
+            container.appendChild(div);
+        }
+    </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #ball {        
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        background-color: red;
+    }
+</style>
+<body>
+    <div id="ball"></div>
+    
+<script>
+    function cool() {
+    const ball = document.getElementById('ball')
+    const stue = ['red', 'blue', 'green', 'yellow', 'purple']
+    for(let i=0; i<stue.length; i++){
+            ball.style.color = colors[i]
+    }
+}
+setInterval(cool, 5000)
+</script>
+</body>
+</html>

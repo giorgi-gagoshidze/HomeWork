@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Document</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --blue:#1e40ff;
+  --light:#f9fbff;
+}
+
+body{
+  margin:0;
+  font-family:'IBM Plex Mono', monospace;
+  background:white;
+  color:#111;
+}
+
+.page{
+  max-width:1200px;
+  margin:auto;
+  padding:40px 30px 80px;
+}
+
+.header{
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-start;
+  margin-bottom:40px;
+}
+
+.title{
+  font-size:42px;
+  letter-spacing:4px;
+  color:var(--blue);
+}
+
+.subtitle{
+  font-size:13px;
+  max-width:280px;
+  line-height:1.5;
+}
+
+.rule{
+  border-top:2px dotted #ddd;
+  margin:20px 0 50px;
+}
+
+.content{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:60px;
+}
+
+.text p{
+  font-size:14px;
+  line-height:1.7;
+  margin-bottom:18px;
+}
+
+.dropcap::first-letter{
+  font-size:48px;
+  float:left;
+  line-height:1;
+  padding-right:8px;
+}
+
+.diagram{
+  border:1px solid #eee;
+  padding:20px;
+}
+
+.diagram img{
+  width:100%;
+  display:block;
+}
+
+.caption{
+  font-size:11px;
+  color:#555;
+  margin-top:8px;
+}
+
+@media(max-width:900px){
+  .content{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+
+<div class="page">
+
+  <div class="header">
+    <div class="title">MAKING SOFTWARE</div>
+    <div class="subtitle">
+      A reference manual for people who design and build software.<br>
+      Written and illustrated by <strong>YOUR NAME</strong>.
+    </div>
+  </div>
+
+  <div class="rule"></div>
+
+  <div class="content">
+
+    <div class="text">
+      <p class="dropcap">Have you ever wondered how <strong>YOUR TOPIC</strong> works? Replace this text with the explanation you provided earlier. This section is meant for conceptual descriptions, not marketing copy.</p>
+
+      <p>Use short, calm paragraphs. This layout works best with educational or technical writing. You can explain algorithms, UI behavior, JavaScript logic, or system design here.</p>
+
+      <p>You can also introduce formulas, concepts, or step-by-step logic just like a printed manual.</p>
+    </div>
+
+    <div class="diagram">
+      <img src="diagrama.png" alt=""/>
+      <div class="caption">Figure 1 — Replace with your own diagram or illustration</div>
+    </div>
+
+  </div>
+
+</div>
+</body>
+</html>

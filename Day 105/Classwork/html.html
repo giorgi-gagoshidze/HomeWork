@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>TIMER ⏲</h1>
+    <p id="watch">0</p>
+    <button id="stop">Stop</button>
+    <button id="reset">Reset</button>
+    <script>
+        let seconds = 0
+        let hey = document.getElementById('watch')
+        function startTimer() {
+        setInterval(function() {
+            seconds += 1;
+            hey.textContent = seconds;
+        }, 1000)
+        }
+        function stopTimer() {
+            clearInterval(timer)
+        }
+        function resetTimer() {
+            seconds = 0
+            hey.textContent = seconds
+        }
+    </script>
+</body>
+</html>
